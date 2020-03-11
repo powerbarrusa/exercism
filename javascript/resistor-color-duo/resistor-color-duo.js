@@ -1,7 +1,7 @@
-export const decodedValue = (duo) => {
-  let color1 = COLORS.indexOf(duo[0])
-  let color2 = COLORS.indexOf(duo[1])
-  let digits = color1 + "" + color2
+export const decodedValue = ([color1, color2]) => {
+  color1 = COLORS.indexOf(color1)
+  color2 = COLORS.indexOf(color2)
+  let digits = color1 * 10 + color2
   let trueDigits = Number(digits)
   return trueDigits
 }
