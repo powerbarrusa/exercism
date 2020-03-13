@@ -1,7 +1,7 @@
 export const gigasecond = (moment) => {
-  let today = new Date()
-  let future = today.setDate(moment)
-  let farAway = future.getDate(0, 0, 0, 0, 0, 1000000000)
-  console.log(farAway)
-  return farAway
+  let unix = moment.getTime()
+  let giga = 1e12
+  let future = (unix + giga)
+  let converted = new Date(future)
+  return converted
 }
