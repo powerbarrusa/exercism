@@ -1,7 +1,7 @@
 export const reverseString = (string) => {
-  const reversedString = ""
-  for (let i = string.length + 1; i > 0; i--){
-    reversedString.concat(string[i])
+  let reversedString = ""
+  for (let i = string.length - 1; i >= 0; i--){
+    reversedString+=(string[i])
   }
   return reversedString
 }
