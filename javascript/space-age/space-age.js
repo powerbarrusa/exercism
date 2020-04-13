@@ -11,7 +11,7 @@ export const age = () => {
   }
   let seconds = {}
   for (const prop in planets) {
-    seconds = (`${prop}: ${planets[prop] * 31557600}`)
+    seconds[prop] = planets[prop] * 31557600
   }
   console.log(seconds)
 }
