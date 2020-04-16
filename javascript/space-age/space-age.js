@@ -1,5 +1,5 @@
-export const age = () => {
-  let planets = {
+export const age = (seconds) => {
+  let planetsInEarthYears = {
     Mercury: 0.2408467,
     Venus: 0.61519726,
     Earth: 1.0,
@@ -9,9 +9,9 @@ export const age = () => {
     Uranus: 84.016846,
     Neptune: 164.79132
   }
-  let seconds = {}
-  for (const prop in planets) {
-    seconds[prop] = planets[prop] * 31557600
+  let planetsInEarthSeconds = {}
+  for (const prop in planetsInEarthYears) {
+    planetsInEarthSeconds[prop] = planetsInEarthYears[prop] * 31557600
   }
-  console.log(seconds)
+  return planetsInEarthSeconds
 }
