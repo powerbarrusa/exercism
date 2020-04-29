@@ -21,5 +21,5 @@ export const age = (
     uranus: 84.016846,
     neptune: 164.79132
   }) => {
-    return planetsInEarthYears[planet] = +((seconds / +(factors[planet])).toFixed(2))
+    return planetsInEarthYears[planet] = +((seconds / (factors[planet])).toFixed(2))
   }
