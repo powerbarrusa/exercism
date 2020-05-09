@@ -2,7 +2,10 @@ export const age = (
   planet,
   seconds,
   factors = {
-    earth: 31557600,
+    earth: {
+      factor: 31557600,
+      year: 1.0
+    },
     mercury: 7600525,
     venus: 19411026,
     mars: 59360959,
@@ -20,6 +23,4 @@ export const age = (
     saturn: 29.447498,
     uranus: 84.016846,
     neptune: 164.79132
-  }) => {
-    return planetsInEarthYears[planet] = +((seconds / (factors[planet])).toFixed(2))
-  }
+  }) => planetsInEarthYears[planet] = +((seconds / (factors[planet])).toFixed(2))
